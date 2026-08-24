@@ -1,0 +1,26 @@
+#!/usr/bin/env php
+<?php
+
+/*
+ * This file is part of the jascha030/wp-plugin-scaffold package.
+ *
+ * (c) Jascha van Aalst <contact@jaschavanaalst.nl>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+declare(strict_types=1);
+
+use Jascha030\WpPluginScaffold\Application;
+
+$autoloadPath = __DIR__ . '/../vendor/autoload.php';
+
+if (!file_exists($autoloadPath)) {
+    fwrite(STDERR, "Composer autoload not found. Run `composer install`.\n");
+    exit(1);
+}
+
+require_once $autoloadPath;
+
+(new Application())->run();
