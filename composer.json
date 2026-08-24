@@ -1,5 +1,5 @@
 {
-    "name": "jascha030/template",
+    "name": "jascha030/wp-plugin-scaffold",
     "description": "Template repo for creating composer packages",
     "license": "MIT",
     "type": "library",
@@ -26,12 +26,12 @@
     "prefer-stable": true,
     "autoload": {
         "psr-4": {
-            "Jascha030\\Project\\": "src/"
+            "Jascha030\\WpPluginScaffold\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Jascha030\\Project\\": "tests/"
+            "Jascha030\\WpPluginScaffold\\": "tests/"
         }
     },
     "config": {
