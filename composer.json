@@ -12,7 +12,8 @@
     "homepage": "https://github.com/jascha030",
     "require": {
         "php": ">=8.4",
-        "composer-runtime-api": "^2.2"
+        "composer-runtime-api": "^2.2",
+        "symfony/console": "^7.4"
     },
     "require-dev": {
         "bamarni/composer-bin-plugin": "^1.9",
@@ -34,6 +35,9 @@
             "Jascha030\\WpPluginScaffold\\": "tests/"
         }
     },
+    "bin": [
+        "bin/wp-plugin-scaffold"
+    ],
     "config": {
         "allow-plugins": {
             "bamarni/composer-bin-plugin": true,
